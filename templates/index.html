@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Chat Interface with ChatGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>AI Voice Assistant</h1>
+        <div class="conversation-area" id="conversationArea">
+            <div class="message status-message">
+                Ready to assist. Click the microphone to begin voice input.
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="controls-row">
+                <button class="btn mic-btn" id="micBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C13.1 2 14 2.9 14 4V10C14 11.1 13.1 12 12 12S10 11.1 10 10V4C10 2.9 10.9 2 12 2M19 10V12C19 15.3 16.3 18 13 18V22H11V18C7.7 18 5 15.3 5 12V10H7V12C7 14.2 8.8 16 11 16H13C15.2 16 17 14.2 17 12V10H19Z"/>
+                    </svg>
+                    Voice Input
+                </button>
+                
+                <button class="btn speaker-btn" id="speakerBtn" disabled>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18.01,19.86 21,16.28 21,12C21,7.72 18.01,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"/>
+                    </svg>
+                    Audio Output
+                </button>
+                
+                <button class="btn text-btn" id="textBtn" disabled>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,3H21V5H3V3M3,7H15V9H3V7M3,11H21V13H3V11M3,15H15V17H3V15M3,19H21V21H3V19Z"/>
+                    </svg>
+                    View Response
+                </button>
+            </div>
+            
+            <div class="controls-row">
+
+                
+                <button class="btn clear-btn" id="clearBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                    </svg>
+                    Clear Session
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
