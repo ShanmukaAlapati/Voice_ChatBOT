@@ -8,7 +8,7 @@
                 
 
 
-                this.BACKEND_URL = 'this.BACKEND_URL = window.location.origin;'; // Change to your Python server URL
+                this.BACKEND_URL = window.location.origin; // Change to your Python server URL
                 
                 this.isRecording = false;
                 this.isSpeaking = false;
@@ -556,4 +556,5 @@ this.addTempMessage('Processing...', 'status-message');
                     </div>
                 `;
             }
+
         });
