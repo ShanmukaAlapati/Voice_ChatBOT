@@ -1,0 +1,30 @@
+Objective:
+Built a personal voicebot assistant that responds to introspective and biographical questions as if it were me — using natural language generation and real-time voice interaction.
+
+Description:
+This project was designed as a creative way to showcase my technical skills while allowing others (like recruiters or peers) to learn about me by simply talking 
+to a bot version of me. The voicebot speaks and responds like me, based on tailored prompts and my real personal background.
+
+Tech Stack:
+
+Frontend: HTML, CSS, JavaScript (voice input/output, chat UI)
+
+Backend: Python (FastAPI)
+
+AI Integration: OpenAI GPT-4 API for personalized natural language responses 
+
+Deployment: Hosted on a cloud server (HTTPS-enabled)
+
+Data Handling: Custom prompt engineering to embed personality traits, career background, and tone
+
+Key Highlights:
+
+Integrated GPT model to act as a personalized assistant that “talks like me”
+
+Used voice input and speech synthesis for an interactive conversational experience
+
+Built end-to-end architecture (UI, API, hosting, prompt logic)
+
+Customized GPT prompts to reflect personal tone, experiences, and values
+
+Demonstrated API integration, server hosting, and front-to-back development
